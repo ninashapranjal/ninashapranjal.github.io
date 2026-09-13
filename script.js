@@ -1,3 +1,22 @@
+const typewriter = document.getElementById("typewriter");
+
+if (typewriter) {
+  const text = "hi i'm pranjal";
+  let index = 0;
+  const typingSpeed = 110;
+
+  function typeText() {
+    if (index < text.length) {
+      typewriter.textContent += text.charAt(index);
+      index++;
+
+      setTimeout(typeText, typingSpeed);
+    }
+  }
+
+  typeText();
+}
+
 const wipe = document.getElementById('wipe');
 
 function circleRadiusToCover(x, y) {

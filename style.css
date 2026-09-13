@@ -124,9 +124,21 @@ h1{
 .icons{
   display:flex;
   justify-content:center;
-  gap:14px;
-  min-height:46px;
+  align-items:center;
+  gap:0;
+  min-height:0;
+  margin:0;
+  padding:0;
 }
+
+.icons img{
+  display:block;
+  width:100%;
+  max-width:260px;
+  height:auto;
+  margin:0;
+}
+
 .icons .icon{
   width:46px;
   height:46px;
@@ -267,6 +279,7 @@ body.contents{
   line-height:1.6;
   font-size:15px;
 }
+
 .hand-note{
   font-family:'Klee One', sans-serif;
   font-size:18px;
@@ -593,4 +606,21 @@ body.contents{
   .sidebar-divider{ display:none; }
   .quick-nav{ flex-direction:row; flex-wrap:wrap; width:100%; }
   .extra-grid, .project-grid{ grid-template-columns:1fr; }
+}
+
+
+#typewriter::after{
+  content:"|";
+  margin-left:3px;
+  animation:blink 0.8s steps(1) infinite;
+}
+
+@keyframes blink{
+  0%, 50%{
+    opacity:1;
+  }
+
+  51%, 100%{
+    opacity:0;
+  }
 }
