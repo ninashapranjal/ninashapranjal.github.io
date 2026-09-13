@@ -366,18 +366,13 @@ body.contents{
 }
 
 .project-card {
-  flex: 0 0 260px;
-  scroll-snap-align: start;
-
+  width: 100%;
   border: 2px solid var(--border);
   border-radius: 16px;
   padding: 14px 16px;
-
   opacity: 0;
   transform: translateY(14px);
-
   box-shadow: none;
-
   transition:
     opacity 0.5s ease,
     transform 0.15s ease,
@@ -417,6 +412,14 @@ body.contents{
   margin-top:8px !important;
   font-size:12px !important;
   opacity:.75;
+}
+
+.project-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+    flex: 0 0 260px;
+
 }
 
 /* ---------- sidebar ---------- */
@@ -508,7 +511,9 @@ body.contents{
   flex-direction:column;
   gap:8px;
   font-size:13.5px;
+  align-items:center;
 }
+
 .quick-nav a{
   position:relative;
   color:var(--brown-dark);
