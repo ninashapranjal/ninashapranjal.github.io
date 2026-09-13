@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>name — about, experience &amp; projects</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Klee+One&family=Playpen+Sans:wght@100..800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body class="contents">
+
+  <div class="page-wrap">
+
+    <main class="content-card">
+
+      <!-- ABOUT -->
+      <section id="about" class="panel reveal">
+        <div class="panel-header">about me</div>
+        <div class="panel-body about-body">
+          <div class="avatar-circle" aria-hidden="true">
+              <img src="img/about-avatar.png" alt="">
+          </div>
+          <div class="about-text">
+            <p class="hand-note">hi, i'm name —</p>
+            <!-- EDIT: about me / what im interested in -->
+            <p>I build backend systems by day and tinker with small personal
+              tools by night. I like things that are reliable, a little
+              clever, and easy for the next person to understand.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPERIENCE -->
+      <section id="experience" class="panel reveal">
+        <div class="panel-header">my experience</div>
+        <div class="panel-body">
+          <div class="timeline">
+
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <h3>STARX, Competitive Exoskeleton Team</h3>
+                <p class="timeline-meta">Software Programmer  · Ann Arbor, MI · Sep 2025 – Present</p>
+                <ul>
+                  <li>Collaborated on a robotic exoskeleton prototype to augment first responder capabilities, leveraging the team’s prior competition experience to prepare and validate systems for the ACE Competitions 2026, acquiring 3rd place. </li>
+                  <li>Developed a MicroPython-based Raspberry Pi system with a high-contrast GUI to interface with a wearable arm monitor, providing real-time exoskeleton state monitoring (battery %, temperature) and low-latency algorithm switching between cyclical and non-cyclical motion modes using dynamic visual cues.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <h3>VMUN, Vaels International School </h3>
+                <p class="timeline-meta">Web Development Lead  · Chennai, TN · Sep 2024 – Oct 2024</p>
+                <ul>
+                  <li>Ensured 100% uptime across all digital infrastructure during a multi-day Model UN conference, resolving issues in real time to guarantee uninterrupted access to submissions, resolutions, and committee updates for 900+ concurrent users.</li>
+                  <li>Coordinated a 20-person technical team to design, build, and launch a full-stack event platform from the ground up, handling registration, scheduling, and live event logistics at scale.</li>
+                </ul>
+              </div>
+            </article>
+
+            <article class="timeline-item">
+              <span class="timeline-dot"></span>
+              <div class="timeline-content">
+                <h3>Smart Run Technologies</h3>
+                <p class="timeline-meta">Data Analyst Intern · Chennai, TN · May 2023 – June 2023</p>
+                <ul>
+                  <li>Engineered an anomaly-detection pipeline in Python (Pandas, NumPy, Matplotlib) and SQL to process a subset of the company's millions of daily factory sensor readings, current, voltage, resistance, temperature, identifying anomalies in ~2% of readings that signaled potential safety hazards.</li>
+                  <li>Automated statistical analysis that previously required manual review, enabling faster detection of equipment irregularities and supporting the company's smart-factory and digital transformation initiatives for clients.</li>
+                </ul>
+              </div>
+            </article>
+
+          </div>
+        </div>
+      </section>
+
+      <!-- PROJECTS -->
+      <section id="projects" class="panel reveal">
+        <div class="panel-header">projects</div>
+        <div class="panel-body">
+          <div class="project-grid">
+            <article class="project-card">
+              <h4>Distributed Rate Limiter</h4>
+              <p>A C++ distributed rate limiter built with Redis and Lua, supporting five different rate-limiting algorithms. Includes a benchmarking system to compare performance across different workloads and thread counts.</p>
+              <p class="project-stack">C++ · Redis · Lua · Python · CMake </p>
+            </article>
+            <article class="project-card">
+              <h4>quietq</h4>
+              <p>A minimal job queue for small teams who don't need Kafka.</p>
+              <p class="project-stack">Rust · Redis</p>
+            </article>
+            <article class="project-card">
+              <h4>Northline Payments Rebuild</h4>
+              <p>Notes available on request — redacted here for obvious reasons.</p>
+              <p class="project-stack">Java · Kafka · gRPC</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!--
+      EXTRACURRICULARS 
+      <section id="extracurriculars" class="panel reveal">
+        <div class="panel-header">extracurriculars</div>
+        <div class="panel-body">
+          <div class="extra-grid">
+             EDIT: repeat/edit per club or org 
+            <div class="extra-card">
+              <h4>Open Source Saturdays</h4>
+              <p>Organizer — monthly local meetup for first-time contributors</p>
+            </div>
+            <div class="extra-card">
+              <h4>Big Table Robotics Mentorship</h4>
+              <p>Volunteer mentor — helped a high school FRC team with software</p>
+            </div>
+            <div class="extra-card">
+              <h4>Recreational League Soccer</h4>
+              <p>Team captain, spring &amp; fall seasons</p>
+            </div>
+            <div class="extra-card">
+              <h4>Neighborhood Tool Library</h4>
+              <p>Volunteer — weekend front desk &amp; inventory system</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      -->
+      
+
+    </main>
+
+    <aside class="sidebar">
+      <div class="photo-box" aria-hidden="true">
+        <img src="img/profile-pic2.jpg" alt="">
+      </div>
+
+      <div class="social-col">
+        <a class="social-item" href="" target="_blank" rel="noopener">
+          <span class="social-circle">in</span>
+          <span class="social-label">LinkedIn</span>
+        </a>
+        <a class="social-item" href="" target="_blank" rel="noopener">
+          <span class="social-circle">gh</span>
+          <span class="social-label">GitHub</span>
+        </a>
+        <a class="social-item" href="">
+          <span class="social-circle">✉</span>
+          <span class="social-label">Email</span>
+        </a>
+      </div>
+
+      <div class="sidebar-divider"></div>
+
+      <nav class="quick-nav">
+        <a href="#about">About</a>
+        <a href="#experience">Experience</a>
+        <!--<a href="#extracurriculars">Extracurriculars</a> -->
+        <a href="#projects">Projects</a>
+        <a href="index.html" class="quick-nav-back" id="backLink">← back</a>
+      </nav>
+    </aside>
+
+  </div>
+
+  <footer class="contents-foot">thanks for visiting ✿</footer>
+
+  <div id="wipe"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
