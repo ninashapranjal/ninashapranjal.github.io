@@ -39,6 +39,7 @@ body:has(#page){
 /* ---------- static green plaid frame ---------- */
 .frame{
   position:relative;
+  
   padding:40px;
   border-radius:34px;
   background-color:var(--plaid-base);
@@ -72,30 +73,47 @@ body:has(#page){
 
 h1{
   font-size:26px;
-  font-family:'Klee One', sans-serif;
+  font-family: "Sniglet", system-ui;
   color:var(--brown-dark);
   margin:0 0 20px;
-  font-weight:bold;
+  font-weight: 500;
 }
 
 /* ---------- about button (hero) ---------- */
-.about-btn{
-  font-family:inherit;
-  cursor:pointer;
-  display:inline-block;
-  background:var(--tan);
-  border:2px solid var(--border);
-  border-radius:16px;
-  padding:10px 22px;
-  font-size:15px;
-  letter-spacing:.08em;
-  color:var(--brown-dark);
-  margin-bottom:20px;
-  animation:sway 3.4s ease-in-out infinite;
-  transform-origin:top center;
+.about-btn {
+  font-family: inherit;
+  cursor: pointer;
+  display: inline-block;
+
+  /* NORMAL */
+  background: var(--brown-dark);
+  border: 2px solid var(--brown-dark);
+  color: var(--cream);
+
+  border-radius: 16px;
+  padding: 10px 22px;
+  font-size: 15px;
+  letter-spacing: .08em;
+  margin-bottom: 20px;
+
+  animation: sway 3.4s ease-in-out infinite;
+  transform-origin: top center;
 }
-.about-btn:hover{ transform:translateY(-2px); box-shadow:0 6px 0 var(--border); }
-.about-btn.pressed{ transform:translateY(3px) scale(.96); box-shadow:0 1px 0 var(--border); }
+
+.about-btn:hover {
+  /* HOVER */
+  background: var(--tan);
+  border-color: var(--border);
+  color: var(--brown-dark);
+
+  transform: translateY(-2px);
+  box-shadow: 0 6px 0 #d8c9a8;
+}
+
+.about-btn.pressed {
+  transform: translateY(3px) scale(.96);
+  box-shadow: 0 1px 0 #d8c9a8;
+}
 
 @keyframes sway{
   0%,100%{ transform:rotate(-2deg); }
@@ -223,7 +241,7 @@ body.contents{
   display:flex;
   gap:20px;
   align-items:center;
-  flex-wrap:wrap;
+  flex-wrap:nowrap;
 }
 .avatar-circle{
   width:80px;
@@ -289,7 +307,7 @@ body.contents{
   background:var(--brown-dark);
   border:2px solid var(--card-bg);
   box-shadow:0 0 0 2px var(--border);
-  animation:dotPulse 2.4s ease-in-out infinite;
+  /*animation:dotPulse 2.4s ease-in-out infinite;*/
 }
 .timeline-item:nth-child(2) .timeline-dot{ animation-delay:.3s; }
 .timeline-item:nth-child(3) .timeline-dot{ animation-delay:.6s; }
@@ -454,8 +472,8 @@ body.contents{
   display:flex;
   align-items:center;
   justify-content:center;
-  animation:bob 3.6s ease-in-out infinite;
 }
+
 .photo-doodle{
   font-size:34px;
   color:var(--brown-dark);
@@ -537,7 +555,7 @@ body.contents{
   background:var(--tan);
   border:2px solid var(--border);
   border-radius:14px;
-  padding:6px 14px;
+  padding: 0px 16px;
   opacity:1 !important;
   width:fit-content;
 }
